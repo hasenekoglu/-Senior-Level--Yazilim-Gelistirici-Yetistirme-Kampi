@@ -7,6 +7,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\corePackages\Core.Application\Core.Application.csproj" />
 		<ProjectReference Include="..\..\..\corePackages\Core.CrossCuttingConcers\Core.CrossCuttingConcerns.csproj" />
 		<ProjectReference Include="..\Domain\Domain.csproj" />
 	</ItemGroup>
@@ -18,9 +19,6 @@
 
 	<ItemGroup>
 		<Folder Include="Features\Brands\Constants\" />
-		<Folder Include="Features\Brands\Dtos\" />
-		<Folder Include="Features\Brands\Models\" />
-		<Folder Include="Features\Brands\Queries\" />
 	</ItemGroup>
 
 </Project>

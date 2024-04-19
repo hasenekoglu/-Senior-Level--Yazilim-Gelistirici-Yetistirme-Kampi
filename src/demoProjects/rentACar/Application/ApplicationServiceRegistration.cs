@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Application.Features.Brands.Rules;
+using FluentValidation;
 
 namespace Application
 {
@@ -19,7 +20,7 @@ namespace Application
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             services.AddScoped<BrandBusinessRules>();
-            //services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CacheRemovingBehavior<,>));
