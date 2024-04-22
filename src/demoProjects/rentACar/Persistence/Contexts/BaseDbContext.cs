@@ -6,14 +6,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Security.Entities;
 
 namespace Persistence.Contexts
 {
     public class BaseDbContext : DbContext
     {
+
         protected IConfiguration Configuration { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Model> Models { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }          
+        public DbSet<RefreshToken> RefreshTokenClaims { get; set; }
+
 
        
 
